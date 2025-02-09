@@ -1,1 +1,3 @@
-
+# MFA, Multi-Factor Authentication is a form of authentication wherein after inputting normal credentials, login and password, the site will ask for additional verification, this verification can be recieved via call, text, or authentication app. It could also ask for a security question which you typically create when making the login credentials.
+# biometrics are another form of authentication that come with most smartphones today. These forgo a normal login credentials in favor of a fingerprint or a facial scan. The fingerprint is, however, not entirely reliable as if someone tries they can lift your fingerprint and use it to log in regardless of your presence. There are also optical biometric locks that scan your retina.
+# A password policy is something put in place by a website or organization that mandates your password to fit within certain criteria, such as having a capital letter, number or non-alphanumeric character. It can also be a length requirement.
