@@ -1,1 +1,3 @@
+Symmetric encryption uses the same key for both decyption and encryption. This causes it to ultimately be faster however less secure as the Asymmetric encryption as it requires the key to be shared by both the sender and the recipient. Common forms of Symmetric encryption include AES, RES, and RC4.
 
+Asymmetric encryption requires the use of a public key and a private key. The public key being known to the public is used to decypt an encrypted message sent by a user to a reciever. This form is the opposite of Symmetric as it is slower but more secure requiring the use of two different keys instead of the same key being sent and possibly intercepted. Common forms of Asymmetric encryption include RSA, DSA, and ECC
