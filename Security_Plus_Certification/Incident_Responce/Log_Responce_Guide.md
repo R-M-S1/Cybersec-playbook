@@ -1,1 +1,2 @@
-
+The two most common types of log formats are CSVs and JSon, CSVs are common seperated values and do exactly what they say, each value provided in a log is seperated by a common and each new instance is seperated by a linebreak. JSon is different as it has words next to the values so you more or less don't have to already know what each value means.
+For CSV it is possible to use commands or different programs to help in decyphering what each comma seperated data block means. 
