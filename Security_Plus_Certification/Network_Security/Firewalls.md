@@ -1,1 +1,3 @@
+Firewalls, in their most basic form, are walls. They monitor and control all inbound and outbound network traffic to ensure the saftey of the data within the walls. When traffic is blocked, it is logged, examined, and the data is given to a cybersecurity professional to examine and prevent it from breaking through the wall in the future.
 
+There are innumerable different types of firewalls each with their own special method of blocking data, or specializing in spesific data types. Web Application Firewalls, for example block spesifically HTTP and HTTPS web traffic from coming or going through the secure barrier.
