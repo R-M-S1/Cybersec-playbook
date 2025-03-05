@@ -1,1 +1,2 @@
-
+Risk management is the process of protecting against, identifying the cause of, identifying the issue itself, documenting the circumstance, and righting the wrongs the attack has cost.
+Proper Risk management weighs the risk of an attack vs the time it would take to protect against that attack. If a company spends its time protecting against a larger attack that has a 10% chance of happening, vs a smaller attack that has a 90% chance of happening, it has wasted resources by the time the smaller attack happens when they could have prevented or at the very least lessened its effects to infintessimal levels.
