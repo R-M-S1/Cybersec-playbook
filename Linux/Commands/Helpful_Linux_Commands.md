@@ -56,3 +56,20 @@ lsusb will list any connected usb devices including flash drives and mice.
 lsmod will list the currently running modules of the device.
 
 the fdisk command can let you manipulate disk storage information on the system, it can be used with or without the -l flag to be used non-interactively or interactively depending on what you desire to use fdisk for. in the first case you can see block devices such as hard drives, in interactive mode you can create partitions. 
+
+### Where Data is stored Lab 13
+/proc is a file directory that exists within the Memory of the device and communicates with the Linux Kernal directly. /proc contains a subdirectory for each running process on the system. /proc also houses information about the system itself in /proc/cpuinfo /proc/meminfo and /proc/devices. it also contains the subdirectory proc/sys. It is important to not directly edit these with a file editor but instead use echo or sysct1 to edit it and cat or sysct1 to view it. 
+
+fg % followed by the job number will show you what the job is running to do. CTRL + Z will stop the job and return the CML to the users control. To have the process continue running in the background bg % job number should be used instead. 
+
+kill % followed by the job number will immediantly cease the function of the job. alternatively killall job type can be used instead to kill all of a certain type of job.
+
+using the top command you can see the acting jobs, by using the letter k you can kill a job with a certain PID, changing the following signal value from its default 15 to a 9 will make the kill forceful, bypassing a job preventing it from doing so.
+
+pkill can be used instead of a PID if you wish to use the job name.
+
+ps will list the processes currently running, ammending -e will display every process, regradless of where it is running. ammending -o will allow you to ammend options to tell the system what columns to output. you can further add --sort and one of the options to sort large to small for the spesific column.
+
+The system logs are managed by two daemons that handle its messages, the syslogd daemon and the klogd daemon. klogd only handles kernal log messages and sends its information to syslogd.
+
+messages generated at kernal boot time are stored in /var/log/dmesg and current kernal messages can be viewed with the command dmesg. /var/log holds the messages that syslogd creates. some processes also handle their own logging. 
