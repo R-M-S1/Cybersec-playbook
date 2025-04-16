@@ -47,3 +47,12 @@ the | character can be used with grep as an OR seperater, such as beans | cheese
 You can also search for a certain variation of a singular set of characters using the pipe, for example using egrep with 'no(b|n)' will have egrep search for nob or non, the parenthesis must be used elsewise egrep will search for nob or n
 brackets can also be used with grep to look for a range of characters, such as in '[0-9]' will look for all integer numbers between 0 and 9.
 the { bracket can be used in conjunction with the [ bracket to search for a sequence of numbers in the range [ provides, i.e. if [0-9] {3} then the system will look for 000 through 999 and any 3 number sequence inbetween.
+
+### Understanding computer Hardware Lab 12
+the command lscpu will inform you of the cpu type the linux distro is currently running on
+the free command will tell you how much RAM and swap space is being used, you can also type free -m or -g for the amount in megabytes or gigabytes respectively. 
+lspci will show you what devices are connected to the pci bus ammending -k to the commmand will also add the devices kernal driver and module used.
+lsusb will list any connected usb devices including flash drives and mice.
+lsmod will list the currently running modules of the device.
+
+the fdisk command can let you manipulate disk storage information on the system, it can be used with or without the -l flag to be used non-interactively or interactively depending on what you desire to use fdisk for. in the first case you can see block devices such as hard drives, in interactive mode you can create partitions. 
