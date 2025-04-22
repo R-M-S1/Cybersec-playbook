@@ -84,7 +84,7 @@ The dig command can be used to resolve a hostname to a spesific IP address. It c
 netstat does a lot with network configuration, as such netstat --help is a useful command. Netstat can be used to find devices who are listening, or waiting, for a task to be given to them. 
 
 |flag| use|
----------
+|--------|-------|
 |-t| limits output to those listening to TCP ports|
 |-l| limits the output to ports with listening services|
 |-n| puts the network adresses in order numerically|
