@@ -73,3 +73,20 @@ ps will list the processes currently running, ammending -e will display every pr
 The system logs are managed by two daemons that handle its messages, the syslogd daemon and the klogd daemon. klogd only handles kernal log messages and sends its information to syslogd.
 
 messages generated at kernal boot time are stored in /var/log/dmesg and current kernal messages can be viewed with the command dmesg. /var/log holds the messages that syslogd creates. some processes also handle their own logging. 
+
+### Lab 14: Network Configuration
+By and large the most important resource for network config is the ifconfig command, as it will allow you to view your Internet Protocol Address. It presents information in two blocks, the first eth0, contains information revolving around your first Ethernet network card. The second, lo, pertains to loopback information, or the internal network interface. The second and third lines contain information regarding version 4 and 6 of the IP, being called IPv4 and IPv6 respectively. IPV4 is displayed as four decimal numbers ranging from 0 to 255 seperated by periods. IPv6 are 128-bit numbers in hexadecimal format ranging from 0 to f.
+
+The Route command will show you the routing information in table form, this information will show you how your system will appear to devices you can route with. 
+
+The dig command can be used to resolve a hostname to a spesific IP address. It can also be used to resolve other fully qualified domain names. The FQDN is the hostname (Hamburger) and the domain name (green.com). Furthermore, you can also use an IP address instead of a hostname or an DQDN to resolve with the dig command. 
+
+netstat does a lot with network configuration, as such netstat --help is a useful command. Netstat can be used to find devices who are listening, or waiting, for a task to be given to them. 
+
+|flag| use|
+---------
+|-t| limits output to those listening to TCP ports|
+|-l| limits the output to ports with listening services|
+|-n| puts the network adresses in order numerically|
+
+the ss command will also allow you to see connections from remote machines to the local machine, statistics about them, and etc. As such, it is a useful tool for troubleshooting issues with the local machine. 
