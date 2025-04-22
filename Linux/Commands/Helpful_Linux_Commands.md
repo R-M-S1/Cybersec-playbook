@@ -92,7 +92,12 @@ netstat does a lot with network configuration, as such netstat --help is a usefu
 the ss command will also allow you to see connections from remote machines to the local machine, statistics about them, and etc. As such, it is a useful tool for troubleshooting issues with the local machine. 
 
 ### Lab 15 User and system security
-
+*important note, a user has to be part of the sudo group for the sudo command to work also sudo asks for the current users password, not the root password*
 |Command|Use|
 |----|----|
 |su/sudo| su can be used to switch users and begin a new shell as that user, and is typically used when you need to write a string of commands, Sudo is used when only a single command needs to be used, the root user must configure the sudo command before a regular user uses the command, the sudo effect remains for 15 minutes on Ubuntu if the root user account is not enabled|
+|exit| exits the su root account|
+|getent| gentent can be used to find account information that does not have to be specified in the local system|
+|who| shows users on the current system|
+|w| shows more detailed information about the users defined by the who command|
+|last| last shows the login history stored in /var/log/wtmp file and displays all login and reboot records by default|
