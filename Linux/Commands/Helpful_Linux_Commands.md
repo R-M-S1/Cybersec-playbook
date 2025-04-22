@@ -101,3 +101,18 @@ the ss command will also allow you to see connections from remote machines to th
 |who| shows users on the current system|
 |w| shows more detailed information about the users defined by the who command|
 |last| last shows the login history stored in /var/log/wtmp file and displays all login and reboot records by default|
+
+### Lab 16: Creating users and groups
+
+
+|command|Use|flags|
+|----|----|----|
+|groupadd| intrestingly, creates a group name to put users into| -r puts the groups into reserve between 1-999|
+|groupmod| modifies existing groups| -n can be used to change the name of the group, -g can be used to change the GID for the group|
+|groupdel| deletes the group.|
+|useradd| adds a user to a group| -D will provide details useful for adding a user while -k will allow you to use a different SKEL directory instead of the default one. -f can be used with a numerical value after the flag to change the value that lets users still login to their account for x number of days after their password expires. -G should be used with a group name to ensure the proper group is given the new user.|
+|usermod| modifies the user| -L will lock the user account, -U will unlock it.|
+|userdel| will delete the user| -r will also delete the home derectory as well as the mail with the user account.|
+|lastb| shows all failed login attempts|
+
+
