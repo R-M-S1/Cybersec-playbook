@@ -131,7 +131,7 @@ the ss command will also allow you to see connections from remote machines to th
 the nine characters that follow the begining character are broken into three blocks, block one indicates the user owners permissions, the next block indicates the group owner permissions, and the next block indicates every one elses, the characters for permissions are r (read), w (write), and x (execute), a - indicates that the block does not have that permission (eg. r-- or rw-) 
 
 |commands| their purpose|flag|
-|---|---|
+|---|---|----|
 |ls -la| lists the hidden files in the current directory and who they belong to.|
 |chmod| chmod can be used to edit a files permissions, this is done by indicating what person you want to remove, rg. o for others, and the permission(s) you want to remove. a can be used to edit all users, u for user and g for group. + can be used to add permissions while - will take them away. chmod can also be used in octal notation, using 4 for read, 2 for write, and 1 for execute. these can be added to make 7 when giving/removing commands.|
 |stat| can view statistics for files, including the octal notation for them, under ACCESS|
