@@ -116,3 +116,25 @@ the ss command will also allow you to see connections from remote machines to th
 |lastb| shows all failed login attempts|
 
 
+### Lab 17: Ownership and permissions
+
+|character when ls -l is used| what it means|
+|-------|--------|
+|d| indicates a directory|
+|-| indicates a regular file|
+|l| is a symbolic link|
+|b| is a block device file|
+|c| is a character device file|
+|p| is a pipe file|
+|s| is a socket file|
+
+the nine characters that follow the begining character are broken into three blocks, block one indicates the user owners permissions, the next block indicates the group owner permissions, and the next block indicates every one elses, the characters for permissions are r (read), w (write), and x (execute), a - indicates that the block does not have that permission (eg. r-- or rw-) 
+
+|commands| their purpose|flag|
+|---|---|
+|ls -la| lists the hidden files in the current directory and who they belong to.|
+|chmod| chmod can be used to edit a files permissions, this is done by indicating what person you want to remove, rg. o for others, and the permission(s) you want to remove. a can be used to edit all users, u for user and g for group. + can be used to add permissions while - will take them away. chmod can also be used in octal notation, using 4 for read, 2 for write, and 1 for execute. these can be added to make 7 when giving/removing commands.|
+|stat| can view statistics for files, including the octal notation for them, under ACCESS|
+|chown| can only be used by the root user, changes a directory for both the user and group of the file.|
+|chgrp| can be used by both the root user and the owner of the file. as such, it only changes the group of the file. If a non-root user attempts to use this command they cannot change group ownership unless they are a member of the group.| -R can be used to change ownership of the group recursively (changing the files, but not the base directory)|
+
