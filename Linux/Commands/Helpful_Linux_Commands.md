@@ -138,3 +138,17 @@ the nine characters that follow the begining character are broken into three blo
 |chown| can only be used by the root user, changes a directory for both the user and group of the file.|
 |chgrp| can be used by both the root user and the owner of the file. as such, it only changes the group of the file. If a non-root user attempts to use this command they cannot change group ownership unless they are a member of the group.| -R can be used to change ownership of the group recursively (changing the files, but not the base directory)|
 
+*** Lab 18: Special files and directories
+
+the letter t can be in the executable permission block, this indicates a sticky bit permission, wherin only the user that created a file can delete the file. 
+
+the letter s in the user execute permission colume indicates that the file has a setuid, it will run as the user executing the file instead of thw owner of the file. if the letter s is instead in the group block it is a setgid which will run as the group that owns it instead of the group the user belongs to
+
+** Hard Links vs soft links
+
+hard links use the existing inode to create another directory. It adds a name to be associated with the existing file.
+soft links are like hard links in that they are associated with a target file, except they use their own inode code and do not add to the list of linked files. 
+
+|Command| use| flag|
+|----|----|---|
+|ln| when used with an existing file and another name, it will link the target to the new name.| -s creates a soft link instead of a hard link|
