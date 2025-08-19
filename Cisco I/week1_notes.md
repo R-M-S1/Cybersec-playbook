@@ -17,7 +17,8 @@ There are three types of collected data, and convienently three ways data is tra
 |observed data| this is data that is gleened by things you do, what you purchase and where.|
 |inferred data| this is data that is analyzed from both sets of data and can include your credit score and your insurance rates.|
 
-|types of data transmission| what is does|
+|types of data transmission| what is does|z
+|-----|----|
 |electrical signals| data is transferred through copper wire through series of impulses to its destination, typically telephone poles|
 |optical signals| light that is sent in pulses by converting them from electrical signals.|
 |wireless signals| wifi connected devices such as smart home appliances or ir signals such as tv remotes|
