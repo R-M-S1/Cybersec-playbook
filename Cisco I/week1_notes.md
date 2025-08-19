@@ -6,6 +6,7 @@ There are different types of network connections:
 |SOHO, or small office, home office| allows both small scale offices and those at ones home to connect togeather and share centralized information|
 |medium to large networks| typically used by schools and corporations for hundreds and maybe thousands of interconnected users|
 |world wide networks| connects everybody on the network to one another, all over the globe.|
+
 RFID tags can be used and are connected to the internet to allow tracking of packages and other goods.
 Sensors and actuators are connected togeather to accomplish automated tasks, such as a sensor recognizing something needs watered and sending the signal to an acutator to water it.
 
